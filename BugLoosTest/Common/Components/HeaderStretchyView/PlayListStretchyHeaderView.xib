@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayListStretchyHeaderView" customModule="BugLoosTest" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Kuo-83-IZl" id="nWi-xb-rfq"/>
+                <outlet property="imageView" destination="8t3-ah-rpU" id="1iZ-vy-7Zn"/>
+                <outlet property="playListLabel" destination="i7Z-2m-5EQ" id="cYr-Qt-T8E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kuo-83-IZl" userLabel="ContainerView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8t3-ah-rpU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7Z-2m-5EQ">
+                    <rect key="frame" x="30" y="190" width="354" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="szz-hi-pnf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made Fro Bugloss Test Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYv-bP-odd">
+                    <rect key="frame" x="30" y="211" width="354" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pVG-Ux-e0x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6sq-1D-lXi"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6sq-1D-lXi" firstAttribute="bottom" secondItem="eYv-bP-odd" secondAttribute="bottom" constant="68" id="0C3-B4-z3M"/>
+                <constraint firstAttribute="bottom" secondItem="8t3-ah-rpU" secondAttribute="bottom" id="IcT-rz-daN"/>
+                <constraint firstItem="i7Z-2m-5EQ" firstAttribute="leading" secondItem="6sq-1D-lXi" secondAttribute="leading" constant="30" id="Nm1-Mx-0Ru"/>
+                <constraint firstItem="6sq-1D-lXi" firstAttribute="trailing" secondItem="eYv-bP-odd" secondAttribute="trailing" constant="30" id="aRY-OM-7Mb"/>
+                <constraint firstItem="6sq-1D-lXi" firstAttribute="trailing" secondItem="i7Z-2m-5EQ" secondAttribute="trailing" constant="30" id="gI0-zs-Htr"/>
+                <constraint firstItem="8t3-ah-rpU" firstAttribute="leading" secondItem="Kuo-83-IZl" secondAttribute="leading" id="jmZ-dV-urd"/>
+                <constraint firstItem="eYv-bP-odd" firstAttribute="top" secondItem="i7Z-2m-5EQ" secondAttribute="bottom" id="oZE-AC-RrJ"/>
+                <constraint firstItem="8t3-ah-rpU" firstAttribute="top" secondItem="Kuo-83-IZl" secondAttribute="top" id="p2P-jy-FaL"/>
+                <constraint firstItem="eYv-bP-odd" firstAttribute="leading" secondItem="6sq-1D-lXi" secondAttribute="leading" constant="30" id="tCO-cm-zL9"/>
+                <constraint firstAttribute="trailing" secondItem="8t3-ah-rpU" secondAttribute="trailing" id="y1X-9r-iPh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="315.40178571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
